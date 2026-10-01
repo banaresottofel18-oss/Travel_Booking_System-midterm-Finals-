@@ -14,7 +14,8 @@ import javax.swing.*;
  */
 public class login_gui extends JFrame implements ActionListener{
      private JLabel loginform,user,pass;
-    private JTextField txtuser, txtpass;
+    private JTextField txtuser;
+    private JPasswordField txtpass;
     private JButton btnlogin, btnclear;
     
       login_gui(){
@@ -42,7 +43,7 @@ public class login_gui extends JFrame implements ActionListener{
         txtuser.setBounds(160, 120, 150, 20);
         add(txtuser);
         
-         txtpass = new JTextField();
+         txtpass = new JPasswordField();
         txtpass.setBounds(160, 160, 150, 20);
         add(txtpass);
         
