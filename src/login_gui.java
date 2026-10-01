@@ -50,6 +50,12 @@ public class login_gui extends JFrame implements ActionListener{
         btnlogin.setBounds(240, 220, 70, 20);
         add(btnlogin);
         
+        // openJFrame
+        btnlogin.addActionListener (e-> {
+          new dashboard_gui().setVisible(true); 
+          dispose();
+        });
+        
         btnclear = new JButton("Clear");
         btnclear.setBounds(160, 220, 70, 20);
         add(btnclear);
@@ -65,6 +71,6 @@ public class login_gui extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+      
     }
 }

@@ -16,6 +16,9 @@ public class function {
         // TODO code application logic here
           login_gui frame = new login_gui();
         frame.setVisible(true);
+          
+          
+          
     }
     
 }
